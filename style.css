@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0d9cf;
+    height: 160vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    background-color: #d4583d;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8), 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: url('./Process\ Header.jpg') center/cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.article-body {
+    padding: 20px;
+    border: 2px solid #d4583d;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.article-body h1 {
+    font-size: 1.8rem;
+    color: #e0d9cf;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.article-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0d9cf;
+    font-weight: 600;
+}
+
+.gear-icon {
+    position: absolute;
+    top: 48px; /* Adjust to position the icon vertically */
+    right: 300px; /* Adjust to position the icon horizontally */
+    width: 100px; /* Adjust size of the icon */
+    height: 100px;
+    background: url('./GearTransparent.png') no-repeat center/contain; /* Replace with your gear icon's path */
+    z-index: 1;
+    animation: rotate 25s linear infinite; /* Add continuous rotating animation */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.imgright {
+    max-width: 40%;
+    max-height: 50%;
+    margin: 0 15px 15px 0;
+    float: right;
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.imgleft {
+    max-width: 40%;
+    max-height: 50%;
+    float: left;
+    margin: 0 15px 15px 0;
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.2);
+}
