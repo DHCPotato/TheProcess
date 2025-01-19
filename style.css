@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #e0d9cf;
-    height: 160vh;
+    height: auto;
 }
 
 .container {
@@ -24,6 +24,22 @@ body {
     height: 200px;
     background: url('./Process\ Header.jpg') center/cover;
     border-radius: 12px 12px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .banner {
+        height: 150px; /* Reduce height for medium screens */
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 100px; /* Further reduce height for smaller screens */
+        background-size: contain;
+    }
 }
 
 .article-body {
@@ -84,4 +100,44 @@ body {
     border-radius: 12px;
     padding: 5px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+    .gear-icon {
+        top: 30px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .article-body h1 {
+        font-size: 1.5rem;
+    }
+
+    .article-body p {
+        font-size: 0.9rem;
+    }
+
+    .imgright, .imgleft {
+        max-width: 100%; /* Images take full width */
+        max-height: auto;
+        float: none; /* Remove float for better stacking */
+        margin: 15px auto;
+        display: block;
+    }
+}
+@media (max-width: 480px) {
+    .gear-icon {
+        top: 20px;
+        right: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .article-body h1 {
+        font-size: 1.2rem;
+    }
+
+    .article-body p {
+        font-size: 0.8rem;
+    }
 }
